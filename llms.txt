@@ -1,15 +1,12 @@
 # ZeroID Agent Identity
 
-ZeroID Agent Identity is a hosted remote MCP for ZeroID.
+ZeroID Agent Identity is a paid hosted remote MCP for ZeroID. It exposes Streamable HTTP tool calls, bearer-token access, public server-card metadata, usage logs, and receipt-oriented JSON for AI agent workflows.
 
 Website: https://zeroidagent.clauxel.com/
-Docs pattern reference: https://github.com/clauxel/MiroFish
-Primary keyword: ZeroID
-Type: MCP
-Default plan: team
 MCP endpoint: https://zeroidagent.clauxel.com/mcp
 Server card: https://zeroidagent.clauxel.com/server-card.json
-Registry name: com.clauxel.zeroidagent/zeroidagent-mcp
-Tools: issue_agent_identity, check_scope_lease, revoke_agent_identity, export_identity_receipt
+Docs: https://github.com/clauxel/zeroid-agent-identity-mcp
 
-Public boundary: docs-only repository; no production source code or secrets.
+Use case: Issue accountable identities for agents before they touch tools.
+Authentication: Bearer token required for production use.
+Tools: issue_agent_identity, check_scope_lease, revoke_agent_identity, export_identity_receipt
